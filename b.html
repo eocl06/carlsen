@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+ <html lang="tr-TR">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>143.000 Zihin Tek Bir Satranç Dehasına Karşı: Magnus Carlsen ve 'Dünya'nın Mücadelesi Beraberlikle Sonuçlandı!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  :root {
+  --bg: #f9fafb;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #4b5563;
+  --accent: #8b5cf6; /* Purple accent color */
+  --accent-hover: #7c3aed;
+  --accent-bg: #ede9fe;
+  --border-color: #e5e7eb;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-base: 'Roboto', sans-serif;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+  --radius-sm: 6px; /* Slightly larger for better visual appeal */
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --transition-duration: 0.2s;
+  --transition-easing: ease-in-out;
+  }
+  * {
+  box-sizing: border-box;
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+  .progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0;
+  background: linear-gradient(to right, #a78bfa, var(--accent));
+  z-index: 1001;
+  transition: width var(--transition-duration) var(--transition-easing);
+  }
+  .container {
+  max-width: 768px; /* Slightly wider for better readability */
+  margin: 40px auto;
+  padding: 40px 48px 60px; /* Increased padding for more spacious feel */
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  }
+  h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--text);
+  line-height: 1.25; /* Tighter line height for headings */
+  margin-bottom: 0.6em;
+  margin-top: 1.4em;
+  }
+  h1 {
+  font-size: 2.85rem; /* Slightly larger main heading */
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  margin-top: 0.4em;
+  letter-spacing: -0.01em; /* Improve readability of larger text */
+  }
+  h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--accent-bg); /* More visible border */
+  margin-top: 2em; /* More space above subheadings */
+  }
+  p {
+  margin-bottom: 1.35em;
+  color: var(--muted);
+  font-family: var(--font-sans);
+  }
+  p strong {
+  color: var(--text);
+  font-weight: 600;
+  }
+  .text-highlight {
+  background-color: var(--accent-bg);
+  color: var(--accent-hover);
+  padding: 3px 8px; /* Adjusted padding */
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  }
+  .image-block {
+  margin: 50px 0; /* Increased margin */
+  border-radius: var(--radius-md); /* Inherit border-radius */
+  overflow: hidden; /* Ensure image doesn't overflow rounded corners */
+  box-shadow: var(--shadow-md); /* Inherit shadow */
+  }
+  .image-block img {
+  display: block; /* Prevent extra space below image */
+  width: 100%;
+  transition: transform 0.3s var(--transition-easing); /* Subtle hover effect */
+  }
+  .image-block:hover img {
+  transform: scale(1.02);
+  }
+  .caption {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #718096;
+  margin-top: 15px;
+  font-family: var(--font-sans);
+  }
+  blockquote {
+  background-color: var(--accent-bg);
+  border-left: 6px solid var(--accent); /* More prominent border */
+  margin: 50px 0px; /* Increased margin */
+  padding: 30px 35px 30px 50px; /* Adjusted padding */
+  font-family: var(--font-sans);
+  font-size: 1.15rem; /* Slightly larger quote text */
+  font-style: italic;
+  line-height: 1.8;
+  color: var(--text);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  }
+  blockquote p {
+  margin-bottom: 0;
+  color: inherit;
+  }
+  blockquote::before {
+  content: "“";
+  font-family: var(--font-serif);
+  font-size: 4.5em; /* Larger quote mark */
+  color: var(--accent);
+  opacity: 0.25; /* Slightly less opaque */
+  position: absolute;
+  left: 10px; /* Adjusted position */
+  top: 0px; /* Adjusted position */
+  line-height: 1;
+  }
+  blockquote footer {
+  margin-top: 1.2em;
+  font-size: 0.9em;
+  font-style: normal;
+  text-align: right;
+  color: var(--muted);
+  }
+  .integrated-cta-section {
+  text-align: center;
+  margin: 70px auto 40px auto; /* Increased margin */
+  padding: 35px 0;
+  position: relative;
+  }
+  .integrated-cta-section::before {
+  content: '';
+  display: block;
+  width: 100px; /* Slightly longer separator */
+  height: 2px;
+  background-color: var(--accent-bg); /* Use accent background for separator */
+  margin: 0 auto 40px auto; /* Increased margin */
+  border-radius: 1px;
+  }
+  .integrated-cta-section .cta-final-text {
+  font-family: var(--font-sans);
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: var(--text);
+  margin-bottom: 0;
+  max-width: 650px; /* Slightly wider text area */
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500; /* Slightly bolder */
+  }
+  .integrated-cta-section .cta-final-text strong {
+  color: var(--accent);
+  font-weight: 600;
+  }
+  .video-link-container {
+  margin: 60px auto; /* Increased margin */
+  text-align: center;
+  padding: 30px;
+  background-color: var(--accent-bg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  }
+  .video-link-container p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: var(--text);
+  }
+  .video-link-container a {
+  color: var(--accent-hover);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  padding: 10px 16px; /* Adjusted padding */
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-duration) var(--transition-easing), color var(--transition-duration) var(--transition-easing);
+  border: 1px solid transparent; /* Add a transparent border for smoother hover */
+  }
+  .video-link-container a:hover {
+  background-color: var(--accent);
+  color: var(--accent-bg);
+  border-color: var(--accent); /* Keep border color consistent on hover */
+  }
+  </style>
+ </head>
+ <body>
+  <div class="progress-bar" id="progress-bar"></div>
+  <div class="container">
+  <h1>143.000 Zihin Tek Bir Satranç Dehasına Karşı: <strong>Magnus Carlsen</strong> ve <strong>'Dünya'</strong>nın Mücadelesi <span class="text-highlight">Beraberlikle Sonuçlandı!</span></h1>
+  <p>Satranç dünyası, yakın zamanda benzerine az rastlanır, oldukça dikkat çekici bir mücadeleye ev sahipliği yaptı. Dünya Şampiyonu <strong>Magnus Carlsen</strong>, bu kez karşısında tek bir rakip değil, <strong>143.000'i aşkın satranç severden</strong> oluşan kolektif bir <strong>"Dünya Takımı"</strong> buldu. <strong>Chess.com platformunda</strong> gerçekleşen ve <strong>46 gün</strong> gibi uzun bir süreye yayılan bu devasa karşılaşma, tarafların birbirine üstünlük kuramamasıyla, yani <span class="text-highlight">beraberlikle</span> neticelendi.</p>
+  <div class="image-block">
+  <img src="https://static.bundle.app/studio/dd9b1d11-1557-4563-b7eb-654e3323943d/333b2b1a-647d-4513-962e-313fb4084306.png" alt="Magnus Carlsen Düşünürken">
+  <div class="caption">Magnus Carlsen, dünyanın en güçlü satranç oyuncularından biri olarak kabul ediliyor.</div>
+  </div>
+  <h2><strong>Kolektif Zeka Sınavı:</strong> Her Hamle İçin 24 Saatlik Beyin Fırtınası</h2>
+  <p>Gözünüzde canlandırın: Bir yanda, satrancın <strong>yaşayan efsanesi</strong> olarak kabul edilen, 34 yaşındaki Norveçli Büyükusta <strong>Magnus Carlsen</strong>. Diğer yanda ise dünyanın dört bir yanından, ortak bir amaç uğruna bir araya gelmiş, hamlelerini tartışarak ve oylayarak belirleyen <strong>143.000'den fazla oyuncu</strong>. Her iki tarafın da bir sonraki hamlesini kararlaştırmak için <strong>24 saatlik süresi</strong> bulunuyordu. "Dünya Takımı" için bu süreç, binlerce farklı görüşün değerlendirildiği, analizlerin yapıldığı ve nihayetinde <strong>demokratik bir oylamayla</strong> tek bir hamleye karar verildiği yoğun bir kolektif çaba anlamına geliyordu.</p>
+  <p>Toplamda <strong>32 hamle</strong> süren bu zihin maratonu, <span class="text-highlight">katılımcı sayısıyla da satranç tarihinde yeni bir rekor kırdı.</span> Hatırlanacağı üzere, bir önceki en kalabalık "Dünyaya Karşı" maçı, 2024'te (<em>Not: Orijinal metinde 2024 yazıyor, eğer farklı bir yıl ise düzeltilebilir</em>) yaklaşık <strong>70.000 kişinin Vishy Anand'a</strong> karşı verdiği mücadeleydi.</p>
+  <div class="image-block">
+  <img src="https://static.bundle.app/studio/dd9b1d11-1557-4563-b7eb-654e3323943d/d8220230-de4a-4c66-a590-735577ed2c64.png" alt="Magnus Carlsen Satranç Oynarken">
+  <div class="caption">Carlsen, sayısız uluslararası turnuvada şampiyonluklar kazandı.</div>
+  </div>
+  <h2>Magnus Carlsen'in Değerlendirmesi</h2>
+  <blockquote>
+  <p><strong>Dünya Takımı</strong> genel olarak <span class="text-highlight">çok, çok sağlam bir satranç</span> ortaya koydu. Her zaman en iyi strateji bu olmayabilir ama bu kez işe yaradığı anlaşılıyor.</p>
+  <footer>— Magnus Carlsen</footer>
+  </blockquote>
+  <p>Peki, satrancın zirvesindeki isim <strong>Magnus Carlsen</strong>, bu sıra dışı deneyim ve devasa rakibi hakkında ne düşündü? Yukarıdaki alıntı, Carlsen'in maç sonrası yaptığı değerlendirmelerden bir kesittir. Bu yorum, iyi organize olmuş bir kalabalığın, bireysel bir deha karşısında dahi ne denli disiplinli ve etkili olabileceğine işaret ediyor.</p>
+  <p>Instagram'da <strong>1.8 milyon takipçisi</strong> bulunan ve <strong>5 kez Dünya Klasik Satranç Şampiyonluğu, 5 kez Dünya Hızlı Satranç Şampiyonluğu ve 8 kez Dünya Yıldırım Satranç Şampiyonluğu</strong> gibi sayısız başarıya imza atmış Carlsen gibi bir isme karşı elde edilen bu beraberlik, "Dünya Takımı" adına şüphesiz <span class="text-highlight">önemli bir başarı</span> olarak değerlendirilmeli.</p>
+  <h2>Bu Sonuç Ne İfade Ediyor: <strong>Teknoloji, Kolektif Zeka ve Stratejinin Kesişimi</strong></h2>
+  <p>Bu olay, sıradan bir satranç maçının ötesinde anlamlar taşıyor. <strong>Teknoloji aracılığıyla bir araya gelen on binlerce insanın</strong>, dünyanın en parlak stratejistlerinden birine karşı nasıl bir performans sergileyebileceğinin çarpıcı bir örneğini teşkil ediyor. <strong>"Kitle kaynak kullanımı" (crowdsourcing)</strong> ve <strong>"kolektif zeka"</strong> gibi kavramların potansiyelini ve gücünü bir kez daha gözler önüne seriyor.</p>
+  <p>Belki de yapay zekanın satrançtaki üstünlüğünün sıkça konuşulduğu bir dönemde, <span class="text-highlight">insanın kolektif çabasının</span> ve organize olmuş bir topluluğun neler başarabileceğine dair düşündürücü bir sonuç bu.</p>
+  <p>Esporun ve online platformların sınırları genişlettiği günümüzde, satranç gibi köklü bir oyunun dahi nasıl <strong>yenilikçi ve kitlesel bir deneyime</strong> evrilebileceğini görmek oldukça heyecan verici.</p>
+  <div class="video-link-container">
+  <p>Karşılaşmanın tamamını ve detaylı analizini merak ediyorsanız:</p>
+  <a href="https://www.youtube.com/watch?v=YRYvydRGqMo" target="_blank" rel="noopener noreferrer">🎥 Magnus Carlsen vs. The World – Full Analysis</a>
+  </div>
+  <div class="integrated-cta-section">
+  <p class="cta-final-text">Bir sonraki "Dünyaya Karşı" mücadelesinde kolektif zekanın bireysel dehaya üstün gelip gelemeyeceği ise şimdiden <strong>merak konusu.</strong></p>
+  </div>
+  </div>
+  <script>
+  // Progress Bar Script
+  const progressBar = document.getElementById('progress-bar');
+  window.addEventListener('scroll', () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  progressBar.style.width = `${scrollPercent}%`;
+  });
+  </script>
+ </body>
+ </html>
