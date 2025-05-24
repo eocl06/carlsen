@@ -14,17 +14,6 @@
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
  <style>
-Anlaşıldı, "Bundle Studio" logosu beyaz renkte olduğu için, logonun daha iyi görünmesi ve mor vurgularla uyumlu olması için üst kısmı koyu (dark) bir renkte yapacağız.
-
-Yapılan Değişiklikler:
-
-Üst Bar Arka Plan Rengi Değiştirildi: .article-logo-container sınıfına, beyaz logoyu ön plana çıkaracak ve mor renklerle uyumlu koyu bir arka plan rengi (#1E2023) eklendi.
-Üst Bar İç Dolgusu Ayarlandı: Logonun üst ve altındaki boşluklar, koyu arka plan üzerinde daha dengeli görünmesi için güncellendi.
-İşte bu değişiklikleri içeren güncellenmiş CSS kodu (HTML yapısı aynı kalmıştır):
-
-CSS
-
- <style>
   :root {
   --bg: #f9fafb;
   --card-bg: #ffffff;
@@ -54,7 +43,7 @@ CSS
     scroll-behavior: smooth;
   }
   body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   font-family: var(--font-sans);
   background: var(--bg);
@@ -125,7 +114,7 @@ CSS
   margin-bottom: 1.25em;
   color: var(--muted);
   font-family: var(--font-sans);
-  font-size: 0.975rem; /* Mobil için biraz büyütülmüş paragraf fontu */
+  font-size: 1.250rem; /* Mobil için biraz büyütülmüş paragraf fontu */
   }
   p strong {
   color: var(--text);
@@ -261,11 +250,11 @@ CSS
 
   @media (min-width: 601px) {
     body {
-        font-size: 1.075rem;
+        font-size: 1.075rem; /* Masaüstü için biraz büyütülmüş temel font boyutu */
         line-height: 1.75;
     }
     .container {
-        margin: 40px auto;
+        margin: 40px auto; /* Masaüstünde üstteki logodan sonraki boşluk */
         padding: 40px 48px 60px;
     }
     h1 {
@@ -275,7 +264,7 @@ CSS
         font-size: 1.95rem;
     }
     p {
-        font-size: 1.075rem;
+        font-size: 1.075rem; /* Masaüstü için paragraf fontu */
     }
     .text-highlight {
         padding: 3px 8px;
@@ -305,7 +294,7 @@ CSS
         font-size: 0.925em;
     }
     .integrated-cta-section {
-        margin: 60px auto 25px auto;
+        margin: 60px auto 25px auto; /* Kapanış cümlesi ile video arası boşluk azaltıldı */
     }
     .integrated-cta-section::before {
         width: 100px;
@@ -316,7 +305,7 @@ CSS
         max-width: 650px;
     }
     .video-link-container {
-        margin: 50px auto;
+        margin: 50px auto; /* Kapanış cümlesinden sonraki boşluk ayarlandı */
     }
     .video-link-container p {
         font-size: 1.125rem;
